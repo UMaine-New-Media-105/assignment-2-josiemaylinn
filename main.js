@@ -4,7 +4,14 @@ function setup() {
 
 function draw() {
   background(220);
+  addShape(50,50,1)
+  
+}
 
+function addShape (x,y,size) {
+  push()
+  translate()
+  scale(size)
   stroke(1);
   strokeWeight(5);
   beginShape();
@@ -16,4 +23,5 @@ function draw() {
   vertex(50, 200);
   vertex(50, 100);
   endShape();
+  pop()
 }
